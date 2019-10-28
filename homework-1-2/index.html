@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form lesson</title>
+</head>
+<body>
+<header>
+	<h1>Урок "Формы": теги и их атрибуты</h1>
+	<h2>Расскажите немного о себе...</h2>
+	<p>Попробейте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.</p>
+</header>
+<main>
+	<form action="text.php">
+		<fieldset>
+			<legend><b>Коротко о себе</b></legend>
+			<p>Имя: <input name="name" size="30"></p>
+			<p>Фамилия: <input name="surname" size="30"></p>
+			<p>Пол: <label>мужской<input type="radio" name="sex" value="male"></label>
+				<label>женский<input type="radio" name="sex" value="female"></label></p>
+			<p>Возраст:<input name="age" size="2"> лет</p>
+		</fieldset>
+		<fieldset>
+			<legend><b>Подробнее о себе</b></legend>
+			<p><input type="radio" name="sex" value="male"> Молодой человек</p>
+			<p><input type="radio" name="sex" value="female"> Девушка</p>
+			<p><input name="date"> Дата рождения</p>
+			<p><input name="family"> Семейное положение</p>
+			<p><input name="status"> Социальный статус</p>
+			<p><input name="location"> Местожительство</p>
+			<p><b>Что вы обычно делаете на выходных</b></p>
+			<p><input type="checkbox" name="weekend"> Сплю</p>
+		  <p><input type="checkbox" name="weekend"> Гуляю с друзьями</p>
+		  <p><input type="checkbox" name="weekend"> Хожу на рыбалку</p>
+		  <p><input type="checkbox" name="weekend"> Гуляю в игры</p>
+		  <p><b>Рассказать о фармах в книге, посвященной HTML:</b></p>
+		  <p>
+		  	<select size="1" name="site">
+	    		<option value="Site frequency: ">Site frequency:    </option>
+	    		<option value="Hello">Hello</option>
+	    		<option value="World">World</option>
+	    	</select>
+	   	</p>
+	   	<p><b>Сколько книг вы прочитали за всю жизнь:</b></p>
+	   	<p>
+		   	<input type="radio" name="books"> 0-10<br>
+		   	<input type="radio" name="books"> 11-20<br>
+		   	<input type="radio" name="books"> 21-50<br>
+				<input type="radio" name="books"> 50+
+	   	</p>
+	   	<p><b>Ваши комментарии:</b></p>
+	   	<p><textarea rows="10" cols="45" name="text"></textarea></p>
+	   	<p>
+		  	<select size="3" multiple name="site">
+	    		<option value="first">Первая позиция</option>
+	    		<option selected value="second">Вторая позиция</option>
+	    		<option value="third">Третья позиция</option>
+	    	</select>
+	   	</p>
+		</fieldset>
+		<fieldset>
+			<legend><b>И заключение</b></legend>
+			<p><input type="text" name="random" placeholder="Это поле введено для вас"></p>
+			<p><b>Email:</b><br><input type="text" name="email"></p>
+			<p><b>Хотите подписаться на самую крутую рассылку спама?</b><br><em>Выберите категорию</em></p>
+			<p><input type="checkbox" name="staf"> Оборудование</p>
+		  <p><input type="checkbox" name="сooking"> Как приготоврить обеды</p>
+		  <p><input type="checkbox" name="fishing"> Заработай милион за два дня!</p>
+		  <p><b>На сколько сложная задача?</b></p>
+			<p><input type="radio" name="hardwork" value="ez"> Совсем нет</p>
+		 	<p><input type="radio" name="hardwork" value="so"> 	Так себе</p>
+		 	<p><input type="radio" name="hardwork" value="hard	"> Еле справился</p>
+		</fieldset>
+		<input type="submit" name="submit" value="Отправить">
+	</form>
+</main>
+</body>
+</html>
